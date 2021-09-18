@@ -1,6 +1,9 @@
 <template id="">
 <p>
- {{ mes}}
+ {{ mes }}
+</p>
+<p>
+ {{ mes2 }}
 </p>
 
 </template>
@@ -10,10 +13,16 @@ import { ref } from 'vue'
 export default { 
 	name: 'HelloVue',
 	setup() { 
-		const mes = ref('Word')
+		const mes = ref('Word');
+		console.log(mes);
 		return { 
 			mes
 		}
+	},
+	data() {
+		return {
+			mes2: 'mes2'
+		};
 	}
 }
 </script>
